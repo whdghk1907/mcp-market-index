@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(python3 -m pytest tests/ -v --tb=short)",
+      "Bash(python3 -m pytest tests/test_api_models.py -v)",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest tests/test_advanced_features.py::test_formatted_output_options -xvs)",
+      "Bash(python -m pytest tests/test_advanced_features.py -k test_formatted_output_options -xvs)",
+      "Bash(python -m pytest tests/test_phase3_advanced.py -k test_formatted_output_options -xvs)",
+      "Bash(python -m pytest tests/test_phase3_advanced.py -k test_parallel_data_fetching -xvs)",
+      "Bash(python -m pytest tests/test_phase3_advanced.py -k test_batch_processing_optimization -xvs)",
+      "Bash(python -m pytest tests/test_phase3_advanced.py -k test_graceful_degradation -xvs)",
+      "Bash(python -m pytest tests/test_phase3_advanced.py -k test_fallback_data_sources -xvs)",
+      "Bash(python -m pytest tests/test_phase3_advanced.py -v)",
+      "Bash(python -m pytest tests/test_phase3_advanced.py tests/test_tools.py tests/test_utils.py -v)",
+      "Bash(python -m pytest tests/test_phase4_stability.py -k test_exponential_backoff_retry -xvs)",
+      "Bash(git checkout:*)",
+      "Bash(python -m pytest tests/test_phase4_stability.py -k TestRetryAndResilienceLogic -xvs)",
+      "Bash(python -m pytest tests/test_phase4_stability.py -k test_circuit_breaker_pattern -xvs)",
+      "Bash(python -m pytest tests/test_phase4_stability.py -k TestDataValidationAndIntegrity -xvs)",
+      "Bash(python -m pytest tests/test_phase4_stability.py -k TestPerformanceMonitoringAndMetrics -xvs)",
+      "Bash(python -m pytest tests/test_phase4_stability.py -k test_api_response_time_monitoring -xvs)",
+      "Bash(python -m pytest tests/test_phase4_stability.py -v)",
+      "Bash(python -m pytest tests/test_phase4_stability.py::TestRetryAndResilienceLogic::test_exponential_backoff_retry tests/test_phase4_stability.py::TestRetryAndResilienceLogic::test_circuit_breaker_pattern tests/test_phase4_stability.py::TestDataValidationAndIntegrity::test_input_parameter_validation tests/test_phase4_stability.py::TestPerformanceMonitoringAndMetrics::test_api_response_time_monitoring -v)",
+      "Bash(python -m pytest tests/test_phase5_logging.py -k test_structured_log_formatter -xvs)",
+      "Bash(python -m pytest tests/test_phase5_logging.py::TestStructuredLogging::test_log_level_filtering -xvs)",
+      "Bash(python -m pytest tests/test_phase5_logging.py::TestMonitoringAndMetrics::test_monitoring_collector_integration -xvs)",
+      "Bash(python -m pytest tests/test_phase5_logging.py::TestStructuredLogging::test_log_context_injection tests/test_phase5_logging.py::TestMonitoringAndMetrics::test_health_checker tests/test_phase5_logging.py::TestMonitoringAndMetrics::test_alert_manager_threshold_alerts -v)",
+      "Bash(python -m pytest tests/test_phase5_logging.py::TestStructuredLogging::test_log_context_injection -xvs)",
+      "Bash(python -m pytest tests/test_phase5_logging.py::TestMonitoringAndMetrics::test_alert_manager_threshold_alerts -xvs)",
+      "Bash(python -m pytest tests/test_phase5_logging.py::TestStructuredLogging::test_structured_log_formatter tests/test_phase5_logging.py::TestStructuredLogging::test_log_level_filtering tests/test_phase5_logging.py::TestStructuredLogging::test_log_context_injection tests/test_phase5_logging.py::TestMonitoringAndMetrics::test_monitoring_collector_integration tests/test_phase5_logging.py::TestMonitoringAndMetrics::test_health_checker tests/test_phase5_logging.py::TestMonitoringAndMetrics::test_alert_manager_threshold_alerts -v)",
+      "Bash(python -m pytest tests/test_phase5_logging.py::TestDashboardDataProvider -v)"
+    ],
+    "deny": []
+  }
+}
